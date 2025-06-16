@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_management
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jwt:
+    secret: fcBhf259Q8eqF4YvJFEIBpdFcjyY78q1GmvqrzMKSWYLmMg15USrrMGIXF0FFjJE
+    jwtAccessTokenExpiration: 600
+    jwtRefreshTokenExpiration: 86400
+    jwtSignupExpiration: 300
