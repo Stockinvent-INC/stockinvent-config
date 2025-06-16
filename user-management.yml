@@ -1,15 +1,15 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/user_management
-    username: postgres
-    password: password
+    username: "{cipher}077242a03662aaa4dde28af0a905fd74c5d92cb8e7e80b76ca3f7654efff3b40"
+    password: "{cipher}74ef67f5305f975d4b8cf7a8959e21e1879a07aedcb80174a4f87125945f0f86"
     driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
   jwt:
-    secret: fcBhf259Q8eqF4YvJFEIBpdFcjyY78q1GmvqrzMKSWYLmMg15USrrMGIXF0FFjJE
+    secret: "{cipher}f53d25c7d70b57f57ca3af066d7ecd93a8d0bab481f694506826d2596f7fcde79707f8fe6d1761210ae5fe5f2cfe228e83cc13d91e358175ba1d023656fcb67fbb9d1759245cc01403b714a7a6f8617f5382b5ef4044b9eb65d3f1b6f9db6f9e"
     jwtAccessTokenExpiration: 600
     jwtRefreshTokenExpiration: 86400
     jwtSignupExpiration: 300
