@@ -8,6 +8,9 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+    sql: 
+      init:
+        mode: always
   jwt:
     secret: "{cipher}f53d25c7d70b57f57ca3af066d7ecd93a8d0bab481f694506826d2596f7fcde79707f8fe6d1761210ae5fe5f2cfe228e83cc13d91e358175ba1d023656fcb67fbb9d1759245cc01403b714a7a6f8617f5382b5ef4044b9eb65d3f1b6f9db6f9e"
     jwtAccessTokenExpiration: 600
